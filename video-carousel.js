@@ -1,4 +1,6 @@
-(function () {
+<script>
+  
+  (function () {
   const scrollContainer = document.getElementById('VideoscrollContainer');
   const cards = Array.from(scrollContainer.querySelectorAll('.inline-block'));
   const prevBtn = document.getElementById('prevBtn');
@@ -61,3 +63,4 @@
   });
 })();
 
+</script>
