@@ -1,0 +1,13 @@
+#VideoscrollContainer { scroll-behavior: smooth !important; scroll-snap-type: x mandatory !important; overflow-x: auto; white-space: nowrap; padding: 1rem; }
+#VideoscrollContainer > div { scroll-snap-align: center !important; scroll-snap-stop: always; width: 80vw; max-width: 560px; display: inline-block; margin: 0 1rem; text-align: center; vertical-align: top; }
+#VideoscrollContainer { scroll-behavior: smooth !important; scroll-snap-type: x mandatory !important; overflow-x: auto; white-space: nowrap; padding: 1rem; }
+#VideoscrollContainer > div { scroll-snap-align: center !important; scroll-snap-stop: always; width: 80vw; max-width: 560px; display: inline-block; margin: 0 1rem; text-align: center; vertical-align: top; }
+#VideoscrollContainer > div > p { font-size: 1.1rem !important; padding-top: 1.2rem; color: #ffffff !important; }
+#VideoscrollContainerContainer { position: relative; width: 100%; overflow: visible; }
+#VideoscrollContainerContainer::before, #VideoscrollContainerContainer::after { content: ""; position: absolute; top: 0; width: 6%; height: 100%; pointer-events: none; opacity: 0.8; }
+#VideoscrollContainerContainer::before { content: ""; position: absolute; top: 0; left: 0; width: 10%; height: 100%; pointer-events: none; opacity: 0.8; background: linear-gradient(to right, rgba(38, 38, 38, 1), rgba(38, 38, 38, 0) 20%); z-index: 10; }
+#VideoscrollContainerContainer::after { content: ""; position: absolute; top: 0; right: 0; width: 10%; height: 100%; pointer-events: none; opacity: 0.8; background: linear-gradient(to left, rgba(38, 38, 38, 1), rgba(38, 38, 38, 0) 20%); z-index: 10; }.video-scrollbar-hide::-webkit-scrollbar { display: none; }
+.video-scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+.video-wrapper { position: relative; width: 100%; padding-top: 56.25%; }
+.video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.video-text { color: #ffffff !important; }
